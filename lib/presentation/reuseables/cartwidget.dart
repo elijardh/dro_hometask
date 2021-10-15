@@ -60,7 +60,11 @@ class _CartWidgetState extends State<CartWidget> {
                     textColor: Color.fromRGBO(54, 54, 54, 0.9),
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
-                    text: "\u20A6" + widget.item.itemCost.toString() + ".00",
+                    text: "\u20A6" +
+                        totalCostOfProduct(
+                                widget.item.itemAmount, widget.item.itemCost)
+                            .toString() +
+                        ".00",
                   ),
                 ],
               ),
@@ -143,4 +147,9 @@ class _CartWidgetState extends State<CartWidget> {
       ),
     );
   }
+}
+
+int totalCostOfProduct(int costOfProduct, int amountOfProduct) {
+  int product = costOfProduct * amountOfProduct;
+  return product;
 }
