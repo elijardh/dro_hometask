@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:dro_hometask/common/size_config.dart';
-import 'package:dro_hometask/presentation/utils/colors.dart';
 
 class TitleText extends StatelessWidget {
   final String text;

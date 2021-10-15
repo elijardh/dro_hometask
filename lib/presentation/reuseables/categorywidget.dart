@@ -1,11 +1,8 @@
 import 'package:dro_hometask/common/size_config.dart';
 import 'package:dro_hometask/presentation/reuseables/texts.dart';
-import 'package:dro_hometask/presentation/utils/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:dro_hometask/common/extensions.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 
+// ignore: must_be_immutable
 class CategoryWidget extends StatefulWidget {
   final String categoryName;
   final String categoryImage;

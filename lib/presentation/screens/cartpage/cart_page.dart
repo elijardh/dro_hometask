@@ -1,4 +1,3 @@
-import 'package:dro_hometask/common/hex_color.dart';
 import 'package:dro_hometask/common/navigator.dart';
 import 'package:dro_hometask/common/size_config.dart';
 import 'package:dro_hometask/presentation/reuseables/cartwidget.dart';
@@ -21,7 +20,6 @@ class _CartPageState extends State<CartPage> {
   SizeConfig config = SizeConfig();
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     BlocProvider.of<CartblocBloc>(context, listen: false).add(CartStarted());
   }

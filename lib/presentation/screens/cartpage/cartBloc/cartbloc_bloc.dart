@@ -12,8 +12,6 @@ class CartblocBloc extends Bloc<CartblocEvent, CartblocState> {
   List<Items> itemList = [];
   CartblocBloc() : super(CartblocInitial()) {
     on<CartblocEvent>((event, emit) async {
-      // TODO: implement event handler
-
       on<CartStarted>(getCartItems);
       on<CartAddItem>(addItems);
       on<CartDeleteItem>(deleteItems);

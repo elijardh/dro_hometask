@@ -2,7 +2,6 @@ import 'package:dro_hometask/common/hex_color.dart';
 import 'package:dro_hometask/common/navigator.dart';
 import 'package:dro_hometask/common/placeholder.dart';
 import 'package:dro_hometask/common/size_config.dart';
-import 'package:dro_hometask/data/local/database.dart';
 import 'package:dro_hometask/domain/item.dart';
 import 'package:dro_hometask/presentation/reuseables/suggestionwidget.dart';
 import 'package:dro_hometask/presentation/reuseables/texts.dart';
@@ -12,7 +11,6 @@ import 'package:dro_hometask/presentation/screens/cartpage/cartBloc/cartbloc_blo
 import 'package:dro_hometask/presentation/screens/cartpage/cart_page.dart';
 import 'package:dro_hometask/presentation/utils/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:dro_hometask/common/extensions.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -34,7 +32,6 @@ class _DetailScreenState extends State<DetailScreen> {
   SizeConfig config = SizeConfig();
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     tempItemCost = widget.item.itemCost;
   }
@@ -461,8 +458,6 @@ class _DetailScreenState extends State<DetailScreen> {
             YMargin(20),
             BlocListener<CartblocBloc, CartblocState>(
               listener: (context, state) {
-                // TODO: implement listener
-
                 if (state is CartblocItemAdded) {
                   showDialog(
                       context: context,

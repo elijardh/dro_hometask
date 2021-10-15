@@ -3,16 +3,12 @@ import 'package:dro_hometask/common/navigator.dart';
 import 'package:dro_hometask/common/size_config.dart';
 import 'package:dro_hometask/presentation/reuseables/texts.dart';
 import 'package:dro_hometask/presentation/reuseables/x_margin.dart';
-import 'package:dro_hometask/presentation/screens/cartpage/cartBloc/cartbloc_bloc.dart';
 import 'package:dro_hometask/presentation/screens/cartpage/cart_page.dart';
 import 'package:dro_hometask/presentation/screens/pharmacy_screen/bloc/phamarcy_bloc.dart';
-import 'package:dro_hometask/presentation/screens/pharmacy_screen/detailscreen.dart';
 import 'package:dro_hometask/presentation/screens/pharmacy_screen/pharmacyscreen.dart';
 import 'package:dro_hometask/presentation/utils/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:dro_hometask/common/extensions.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key key}) : super(key: key);
@@ -27,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
   SizeConfig config = SizeConfig();
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     controller = PageController(initialPage: 2);
   }
@@ -98,6 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: config.sh(40),
                       width: config.sw(40),
                       decoration: BoxDecoration(
+                        border: Border.all(color: Colors.white, width: 2.5),
                         gradient: LinearGradient(colors: [
                           XColors.redGradientLeft,
                           XColors.redGradientRight

@@ -2,7 +2,6 @@ import 'package:dro_hometask/common/hex_color.dart';
 import 'package:dro_hometask/common/navigator.dart';
 import 'package:dro_hometask/common/placeholder.dart';
 import 'package:dro_hometask/common/size_config.dart';
-import 'package:dro_hometask/presentation/reuseables/categorywidget.dart';
 import 'package:dro_hometask/presentation/reuseables/filteredSuggestionWidget.dart';
 import 'package:dro_hometask/presentation/reuseables/suggestionwidget.dart';
 import 'package:dro_hometask/presentation/reuseables/texts.dart';
@@ -29,7 +28,6 @@ class _PharmacyScreenState extends State<PharmacyScreen> {
   var blocProv;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     blocProv = BlocProvider.of<PhamarcyBloc>(context, listen: false).state;
   }
@@ -97,7 +95,6 @@ class _PharmacyScreenState extends State<PharmacyScreen> {
                           double width;
                           bool keyWordExist;
                           bool WordDoNotExist;
-
                           if (state is PhamarcyKeyWordMatch) {
                             width = config.sw(200);
                             keyWordExist = true;

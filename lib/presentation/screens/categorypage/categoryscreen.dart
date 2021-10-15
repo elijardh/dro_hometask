@@ -8,7 +8,6 @@ import 'package:dro_hometask/presentation/reuseables/texts.dart';
 import 'package:dro_hometask/presentation/reuseables/x_margin.dart';
 import 'package:dro_hometask/presentation/reuseables/y_margin.dart';
 import 'package:dro_hometask/presentation/screens/categorypage/bloc/category_bloc.dart';
-import 'package:dro_hometask/presentation/screens/pharmacy_screen/bloc/phamarcy_bloc.dart';
 import 'package:dro_hometask/presentation/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

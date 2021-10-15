@@ -10,7 +10,6 @@ class PhamarcyBloc extends Bloc<PhamarcyEvent, PhamarcyState> {
   @override
   PhamarcyBloc() : super(PhamarcyInitial(suggestionList: suggestionItems)) {
     on<PhamarcyEvent>((event, emit) {
-      // TODO: implement event handler
       if (event is SearchPharmacyEvent) {
         if (event.keyword.isEmpty) {
           emit(PhamarcyInitial(suggestionList: suggestionItems));

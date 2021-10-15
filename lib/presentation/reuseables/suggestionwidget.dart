@@ -4,6 +4,7 @@ import 'package:dro_hometask/presentation/reuseables/texts.dart';
 import 'package:dro_hometask/presentation/reuseables/y_margin.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class SuggestionWidget extends StatelessWidget {
   final String itemName;
   final String itemMass;
